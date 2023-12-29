@@ -1,4 +1,6 @@
-# Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-
+ # Name: Kailash
+ # Reg No: 23014391
+ # Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-
  AIM:
 To study about the different digital IC’s and to verify the truth table in Quartus for the basic logic gates using Verilog programming.
 
@@ -59,14 +61,34 @@ If the output is 1, then the bulb glows.
 Check all the gates following the same procedure.
 Program:
 /*
-Program to verify the truth table in quartus for the basic logic gates using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Program to verify the truth table in quartus for the basic logic gates using Verilog # 
+  # programming.
+
+module bm(a,b,y1,y2,y3,y4,y5,y6,y7);
+input a,b;
+output y1,y2,y3,y4,y5,y6,y7;
+
+and(y1,a,b);
+or(y2,a,b);
+not(y3,a);
+xor(y4,a,b);
+nand(y5,a,b);
+nor(y6,a,b);
+xnor(y7,a,b);
+endmodule
 */
-Logic symbol & Truthtable
-RTL realization
-Output:
-RTL
+# Logic symbol & Truthtable:
+![230302665-fe903001-212a-4a7f-a788-2ba3c5545bc9](https://github.com/kailash2506/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/149034874/d216ff83-8bad-4759-94a2-5e4963c022d1)
+
+
+# RTL realization:
+
+![230288847-47652f53-f437-467b-bd01-0f1a7a60ef13](https://github.com/kailash2506/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/149034874/ea9ac9f2-c974-4fb3-857f-6e4b46f2f7b9)
+
+# wave form:
+![230302408-386124b1-90f8-421e-9486-1d4c1ef6d5bd](https://github.com/kailash2506/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/149034874/2daabb4a-0d47-466a-9458-b5e2b599cc8c)
+
+
 
 Result:
 Thus the different digital IC’s are studied and the truth table for different logic gates are verified.
