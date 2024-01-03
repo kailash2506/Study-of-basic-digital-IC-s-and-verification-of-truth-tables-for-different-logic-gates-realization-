@@ -51,22 +51,28 @@ The 'Exclusive-NOR' gate circuit does the opposite to the EX-OR gate. It will gi
 
 Y= A⊕B
 
-Procedure
-Connect the supply (+5V) to the circuit
-Switch ON the main switch
-Press the switches for inputs “A” and “B”. The switch is ON state when 1 is pressed. The switch is OFF state when 0 is pressed.
-If the output is 1, then the bulb glows.
-Check all the gates following the same procedure.
+# Procedure:
+Connect the supply (+5V) to the circuit Switch ON the main switch Press the switches for inputs “A” and “B”. The switch is ON
+state when 1 is pressed. The switch is OFF state when 0 is pressed. If the output is 1, then the bulb glows. Check all the gates
+following the same procedure.
 Program:
-/*
-Program to verify the truth table in quartus for the basic logic gates using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
-Logic symbol & Truthtable
-RTL realization
-Output:
-RTL
-
+module logicgates(a,b,y1,y2,y3,y4,y5,y6,y7);
+input a,b;
+output y1,y2,y3,y4,y5,y6,y7;
+and (y1,a,b);
+or (y2,a,b);
+not (y3,a);
+xor (y4,a,b);
+nand (y5,a,b);
+nor(y6,a,b);
+xnor (y7,a,b);
+endmodul
+# Output:
+# Logic symbol & Truthtable:
+![image](https://github.com/vasanthkumarch/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/149034874/730d729f-c84a-409f-907e-96d1de5eabd2)
+# RTL realization:
+![image](https://github.com/vasanthkumarch/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/149034874/dba0d2d2-7ef3-44bc-9828-83b2a5fefff1)
+# Timing diagram:
+![image](https://github.com/vasanthkumarch/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/149034874/7c5eaf53-d71e-43a9-ac8a-866967da1e25)
 Result:
 Thus the different digital IC’s are studied and the truth table for different logic gates are verified.
